@@ -8,7 +8,7 @@ export const app = express();
 app.use(express.json());
 
 
-app.post("/identity", async (req: Request, res: Response) => {
+app.post("/identify", async (req: Request, res: Response) => {
   try {
     const { email, phoneNumber } = req.body as {
       email?: string;
